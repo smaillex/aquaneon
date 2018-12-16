@@ -17,7 +17,6 @@
         height: 54px;
     }
     header .anonce {
-        bottom: 370px;
         margin-left: -150px;
         width: 300px;
     }
@@ -26,7 +25,6 @@
     }
     header .header_front h1 {
         width: 34%;
-        bottom: 500px;
         margin-left: -17%;
         padding: 12px;
         font-size: 30px;
@@ -36,7 +34,6 @@
 @media only screen and (max-width : 1200px) {
     header .header_front h1 {
         width: 34%;
-        bottom: 450px;
         margin-left: -17%;
         font-size: 26px;
     }
@@ -47,7 +44,6 @@
     }
     header .anonce {
         width: 300px;
-        bottom: 330px;
     }
     footer .wdev a {
         width: 80px;
@@ -77,11 +73,12 @@
     }
     header .anonce {
         width: 240px;
-        bottom: 240px;
         margin-left: -120px;
-    }
+		}
+		header .header_front {
+			background-size: cover;
+		}
     header .header_front h1 {
-        bottom: 330px;
         font-size: 18px;
     }
     header .anonce a.btn {
@@ -123,7 +120,9 @@
         padding-right: 0;
         text-align: center;
         display: inherit;
-        width: 100%;
+				width: 100%;
+				height: 30%;
+    	padding-top: 4%;
     }
     header .topmenu nav.right_menu ul>li a, header .topmenu nav.left_menu ul>li a {
         font-size: 32px;
@@ -134,7 +133,7 @@
         width: 100%;
         display: initial;
         padding-top: 20%;
-    }
+		}
 }
 
 /* Extra Small Devices, Phones */

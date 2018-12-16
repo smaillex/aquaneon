@@ -70,7 +70,7 @@ header .header_front h1 {
     display: block;
     width: 40%;
     position: absolute;
-    bottom: 550px;
+    bottom: 76%;
     text-align: center;
     text-transform: uppercase;
     background-color: #000407d1;
@@ -82,7 +82,7 @@ header .header_front h1 {
 }
 header .anonce {
     position: absolute;
-    bottom: 400px;
+    bottom: 55%;
     left: 50%;
     margin-left: -176px; 
     width: 352px;
