@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>О группе AQUANEON</title>
+	<link href="https://fonts.googleapis.com/css?family=Neucha|Open+Sans:300,400,600,700,800|Rubik:300,400,500&amp;subset=cyrillic"
+	 rel="stylesheet">
+
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="page">
+	<div class="btn-menu m-display"><span></span></div>
+	<header style="background-image: url(/img/header_fon_end.jpg);">
+		<div class="container">
+			<div class="row topmenu">
+				<nav class="col-sm-4 left_menu">
+						<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="about.html">О группе</a></li>
+								<li><a href="media.html">Медиа</a></li>
+							</ul>
+						</nav>
+						<div class="col-sm-4 logo">
+							<a href=""><img src="/img/logo.png" alt=""></a>
+						</div>
+						<nav class="col-sm-4 right_menu">
+							<ul>
+								<li><a href="photo.html">Фото</a></li>
+								<li><a href="show.html">Концерты</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+				</nav>
+			</div>
+			<div class="header_front row">
+				<!-- <div class="col-sm-8 img">
+					<img src="/img/contacts.png" alt="" style="width:100%">
+				</div> -->
+				<div class="col-sm-12 txt">
+					<h1>НАШИ КОНТАКТЫ</h1>
+					<p><a href="" title="ИНстагарм" target="_blank"><img src="/img/insta.svg" alt="Инстаграм" class="icn">Инстаграм</a> </p>
+					<p><a href="https://vk.com/aqua_neon" title="Вконтакте" target="_blank"><img src="/img/vk.svg" alt="Вконтакте" class="icn">Вконтакте</a></p>
+					<p>Организация концертов ООО "КА МУЗЛАЙФ". Телефон для связи: +7 (909) 060-11-36</p>
+					<p>Все организационный моменты по проведению концертов <a href="https://vk.com/club174703218" target="_blank" title="ООО КА Музлайф">в группе Вконтакте</a></p>
+					<a href="" class="btn">Купить билет</a>
+				</div>
+			</div>
+			<footer class="ftr">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2 col-sm-offset-4 text-center">
+							<p>&copysr; 2013 AQUANEON</p>
+						</div>
+						<div class="col-sm-4 wdev">
+							<a href=""><img src="/img/logodev.svg" alt=""></a>
+						</div>
+						<div class="social col-sm-2">
+							<a href="https://vk.com/aqua_neon" target="_blank"><img src="/img/vk.svg" alt=""></a>
+							<a href="" target="_blank"><img src="/img/insta.svg" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</header>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(window).resize(function () {
+			var win_w = $(window).width();
+			var win_h = $(window).height();
+			var h_tpm = $(".topmenu").height();
+			var h_ftr = $(".ftr").height();
+			var h_fr = win_h - h_tpm - h_ftr;
+			$(".intro").css("width", win_w);
+			$(".intro").css("height", win_h);
+			$(".header_front").css("height", h_fr)
+		});
+		$(window).resize();
+	</script>
+	<script>
+		$(".btn-menu").click(function () {
+			if ($(this).hasClass("active") === false) {
+				$(this).addClass('active');
+				$(".topmenu").addClass('active');
+			}
+			else {
+				$(this).removeClass('active');
+				$(".topmenu").removeClass('active');
+			}
+		})
+	</script>
+</body>
+
+</html>
